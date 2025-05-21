@@ -95,3 +95,39 @@ body, h1, h2, h3, p, ul, li, a {
     font-size: 14px;
   }
   
+/* Responsive: ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main img {
+    float: none !important;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+
+  ul li {
+    padding-left: 25px;
+    font-size: 16px;
+  }
+}
