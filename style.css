@@ -95,39 +95,40 @@ body, h1, h2, h3, p, ul, li, a {
     font-size: 14px;
   }
   
-/* Responsive: ajustes para pantallas pequeñas (celulares) */
+/* Contenedor para texto e imagen */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* permite ajustar en móviles */
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.intro-image img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ajustes para celulares */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  header, footer {
-    padding: 15px;
+  .intro-image img {
+    width: 150px;
+    margin-top: 10px;
   }
 
-  header h1 {
-    font-size: 18px;
-  }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  main img {
-    float: none !important;
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-  }
-
-  h2, h3 {
-    font-size: 18px;
-  }
-
-  ul li {
-    padding-left: 25px;
+  .intro-text p {
     font-size: 16px;
   }
 }
